@@ -6,8 +6,8 @@ class About extends Component {
   render() {
     return (
       <div>
-          <img src={this.props.profilePic} alt="profile-pic" className="profile" />
-        <h1>Hello!</h1>
+          {/* <img src={this.props.profilePic} alt="profile-pic" className="profile" /> */}
+        <h1>Hello World!</h1>
         <p>My name is Archana.</p>
         <Title />
         <p>I am always looking forward to working on meaningful projects.</p>
