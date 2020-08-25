@@ -9,16 +9,18 @@ const TITLES = [
 ];
 
 class Title extends Component {
-  state = { titleIdx: 0 };
+  state = { titleIdx: 0, fadeIn: true };
 
   animateTitles = () => {
     this.titleInterval = setInterval(() => {
       const titleIdx = (this.state.titleIdx + 1) % TITLES.length;
-      this.setState({ titleIdx });
+      this.setState({ titleIdx, fadeIn: true });
+      setTimeout(() => this.setState({ fadeIn: false }), 2000);
     }, 4000);
   };
 
   componentDidMount() {
+    setTimeout(() => this.setState({ fadeIn: false }), 2000);
     this.animateTitles();
   }
 
@@ -27,9 +29,14 @@ class Title extends Component {
   }
 
   render() {
-    const title = TITLES[this.state.titleIdx];
+    const { titleIdx, fadeIn } = this.state;
+    const title = TITLES[titleIdx];
 
-    return <p>I am {title}</p>;
+    return (
+      <p className={fadeIn ? 'title-fade-in' : 'title-fade-out'}>
+        I am {title}
+      </p>
+    );
   }
 }
 
