@@ -5,7 +5,7 @@ import project3 from '../assets/project3.png';
 const PROJECTS = [
   {
     id: 1,
-    title: 'Example React Application',
+    title: 'Example React Application 1',
     description:
       'Ut eiusmod ipsum reprehenderit nostrud mollit proident ea reprehenderit ullamco consequat eiusmod.',
     link: '/',
@@ -13,7 +13,7 @@ const PROJECTS = [
   },
   {
     id: 2,
-    title: 'My API',
+    title: 'My API 1',
     description:
       'Ut eiusmod ipsum reprehenderit nostrud mollit proident ea reprehenderit ullamco consequat eiusmod.',
     link: '/',
@@ -21,11 +21,51 @@ const PROJECTS = [
   },
   {
     id: 3,
-    title: 'Example React Application',
+    title: 'Example React Application 2',
     description:
       'Ut eiusmod ipsum reprehenderit nostrud mollit proident ea reprehenderit ullamco consequat eiusmod.',
     link: '/',
     image: project3,
+  },
+  {
+    id: 4,
+    title: 'Example React Application 4',
+    description:
+      'Ut eiusmod ipsum reprehenderit nostrud mollit proident ea reprehenderit ullamco consequat eiusmod.',
+    link: '/',
+    image: project3,
+  },
+  {
+    id: 5,
+    title: 'Example React Application 5',
+    description:
+      'Ut eiusmod ipsum reprehenderit nostrud mollit proident ea reprehenderit ullamco consequat eiusmod.',
+    link: '/',
+    image: project3,
+  },
+  {
+    id: 6,
+    title: 'My API 2',
+    description:
+      'Ut eiusmod ipsum reprehenderit nostrud mollit proident ea reprehenderit ullamco consequat eiusmod.',
+    link: '/',
+    image: project2,
+  },
+  {
+    id: 7,
+    title: 'Example React Application 6',
+    description:
+      'Ut eiusmod ipsum reprehenderit nostrud mollit proident ea reprehenderit ullamco consequat eiusmod.',
+    link: '/',
+    image: project3,
+  },
+  {
+    id: 8,
+    title: 'My API 3',
+    description:
+      'Ut eiusmod ipsum reprehenderit nostrud mollit proident ea reprehenderit ullamco consequat eiusmod.',
+    link: '/',
+    image: project2,
   },
 ];
 
