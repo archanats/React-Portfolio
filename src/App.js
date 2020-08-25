@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Projects from './components/Projects';
+import SocialProfiles from './components/SocialProfiles';
+
+import profilePic from './assets/archana.jpeg';
+import About from './components/About';
+
+class App extends Component {
+  state = {
+    displayBio: false,
+  };
+
+  toggleDisplayBio = () => {
+    this.setState({ displayBio: !this.state.displayBio });
+  };
+
+  render() {
+    return (
+      <div>
+        <About displayBio={this.state.displayBio} toggleDisplayBio={this.toggleDisplayBio} profilePic={profilePic}/>
+        <hr />
+        <Projects />
+        <hr />
+        <SocialProfiles />
+      </div>
+    );
+  }
 }
 
 export default App;
