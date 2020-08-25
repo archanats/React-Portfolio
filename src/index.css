@@ -1,3 +1,9 @@
+:root {
+  --mainYellow: #f5b971;
+  --mainWhite: #fff;
+  --mainBlue: #0f4c75;
+  --mainGrey: #9b9999;
+}
 @font-face{
   font-family: RobotoCondensed;
   src: url(./assets/roboto-condensed.light.ttf);
@@ -12,7 +18,6 @@
 body {
   text-align: center;
   font-size: 1.75rem;
-  padding: 2.5%;
   font-family: RobotoCondensed;
   /* color: bisque;
   background-color: rgba(2, 1, 1, 0.76); */
@@ -48,4 +53,21 @@ h1, h2, h3, h4, h5 {
 @keyframes fade-in {
   from {opacity: 0;}
   to {opacity: 100;}
+}
+
+.jumbotron {
+  background-color: var(--mainBlue);
+  color: var(--mainWhite);
+}
+
+.btn-yellow {
+  background-color: var(--mainYellow);
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: var(--mainBlue);
+  border-radius: 0 !important;
+}
+.btn-yellow:hover {
+  color: var(--mainYellow);
+  background: var(--mainBlue);
 }

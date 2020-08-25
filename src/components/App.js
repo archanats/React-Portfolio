@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import Projects from './components/Projects';
-import SocialProfiles from './components/SocialProfiles';
+import Projects from './Projects';
+import SocialProfiles from './SocialProfiles';
 
-import profilePic from './assets/archana.jpeg';
-import About from './components/About';
+import profilePic from '../assets/archana.jpeg';
+import About from './About';
 
 class App extends Component {
   state = {
