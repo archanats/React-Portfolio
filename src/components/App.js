@@ -19,7 +19,6 @@ class App extends Component {
     return (
       <div>
         <About displayBio={this.state.displayBio} toggleDisplayBio={this.toggleDisplayBio} profilePic={profilePic}/>
-        <hr />
         <Projects />
         <hr />
         <SocialProfiles />
