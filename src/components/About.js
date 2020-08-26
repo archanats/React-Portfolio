@@ -5,9 +5,10 @@ import Title from './Title';
 const About = ({ displayBio, toggleDisplayBio }) => (
   <div className="jumbotron">
     <div className="container-fluid">
-      {/* <img src={this.props.profilePic} alt="profile-pic" className="profile" /> */}
       <h1>Hello World!</h1>
-      <p>My name is <span className="dev-name">Archana</span>.</p>
+      <p>
+        My name is <span className="dev-name">Archana</span>.
+      </p>
       <Title />
       <p>I am always looking forward to working on meaningful projects.</p>
       {displayBio ? (
