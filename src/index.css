@@ -71,7 +71,7 @@ h1 {
 .btn-yellow {
   background-color: var(--mainYellow);
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1.20rem;
   color: var(--mainBlue);
   border-radius: 0 !important;
 }

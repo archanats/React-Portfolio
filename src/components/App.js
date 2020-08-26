@@ -1,36 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import Projects from './Projects';
-import SocialProfiles from './SocialProfiles';
+import Main from './Main';
 
-import profilePic from '../assets/archana.jpeg';
-import About from './About';
-
-class App extends Component {
-  state = {
-    displayBio: false,
-  };
-
-  toggleDisplayBio = () => {
-    this.setState({ displayBio: !this.state.displayBio });
-  };
-
-  render() {
-    return (
-      <>
-        <About
-          displayBio={this.state.displayBio}
-          toggleDisplayBio={this.toggleDisplayBio}
-          profilePic={profilePic}
-        />
-        <div className="container">
-          <Projects />
-          <hr />
-          <SocialProfiles />
-        </div>
-      </>
-    );
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <div>
+      <Main />
+    </div>
+  </BrowserRouter>
+);
 
 export default App;
