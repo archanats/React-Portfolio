@@ -51,22 +51,6 @@ const PROJECTS = [
     link: '/',
     image: project2,
   },
-  {
-    id: 7,
-    title: 'Example React Application 6',
-    description:
-      'Ut eiusmod ipsum reprehenderit nostrud mollit proident ea reprehenderit ullamco consequat eiusmod.',
-    link: '/',
-    image: project3,
-  },
-  {
-    id: 8,
-    title: 'My API 3',
-    description:
-      'Ut eiusmod ipsum reprehenderit nostrud mollit proident ea reprehenderit ullamco consequat eiusmod.',
-    link: '/',
-    image: project2,
-  },
 ];
 
 export default PROJECTS;
