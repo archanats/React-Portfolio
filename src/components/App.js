@@ -17,12 +17,18 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <About displayBio={this.state.displayBio} toggleDisplayBio={this.toggleDisplayBio} profilePic={profilePic}/>
-        <Projects />
-        <hr />
-        <SocialProfiles />
-      </div>
+      <>
+        <About
+          displayBio={this.state.displayBio}
+          toggleDisplayBio={this.toggleDisplayBio}
+          profilePic={profilePic}
+        />
+        <div className="container">
+          <Projects />
+          <hr />
+          <SocialProfiles />
+        </div>
+      </>
     );
   }
 }

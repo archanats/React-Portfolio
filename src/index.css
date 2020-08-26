@@ -17,7 +17,7 @@
 
 body {
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-family: RobotoCondensed;
   /* color: bisque;
   background-color: rgba(2, 1, 1, 0.76); */
@@ -25,6 +25,14 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: EconomicaBold;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.dev-name {
+  font-size: 1.75rem;
 }
 
 .profile {
@@ -63,7 +71,7 @@ h1, h2, h3, h4, h5 {
 .btn-yellow {
   background-color: var(--mainYellow);
   text-transform: capitalize;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--mainBlue);
   border-radius: 0 !important;
 }

@@ -15,14 +15,18 @@ const SocialProfile = ({ profile }) => (
 );
 
 const SocialProfiles = () => (
-  <div className="row">
-    <h3>Connect with me!</h3>
-    <div className="my-5 d-flex text-center justify-content-center">
-      {SOCIAL_PROFILES.map((profile) => {
-        return <SocialProfile key={profile.id} profile={profile} />;
-      })}
+  <>
+    <div className="row">
+    <h3 className="col-12 mx-auto">Connect with me!</h3>
     </div>
-  </div>
+    <div className="row">
+      <div className="col-12 mx-auto mt-2">
+        {SOCIAL_PROFILES.map((profile) => {
+          return <SocialProfile key={profile.id} profile={profile} />;
+        })}
+      </div>
+    </div>
+  </>
 );
 
 export default SocialProfiles;
