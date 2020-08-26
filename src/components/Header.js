@@ -5,12 +5,6 @@ import { Navbar, Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import About from './About';
 
 class Header extends Component {
-  style = {
-    display: 'inline-block',
-    margin: 10,
-    marginBottom: 30,
-  };
-
   state = { isNavOpen: false, displayBio: false };
 
   toggleNav = () => this.setState({ isNavOpen: !this.state.isNavOpen });
@@ -21,12 +15,12 @@ class Header extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <Navbar expand="md">
           <div className="container">
             <NavbarToggler onClick={this.toggleNav} />
             <Collapse isOpen={this.state.isNavOpen} navbar>
-              <Nav navbar>
+              <Nav className="ml-auto" navbar>
                 <NavItem>
                   <NavLink className="nav-link" to="/home">
                     Home
@@ -45,7 +39,7 @@ class Header extends Component {
           displayBio={this.state.displayBio}
           toggleDisplayBio={this.toggleDisplayBio}
         />
-      </div>
+      </>
     );
   }
 }
