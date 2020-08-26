@@ -15,9 +15,9 @@ const SocialProfile = ({ profile }) => (
 );
 
 const SocialProfiles = () => (
-  <div>
+  <div className="row">
     <h3>Connect with me!</h3>
-    <div>
+    <div className="my-5 d-flex justify-content-center">
       {SOCIAL_PROFILES.map((profile) => {
         return <SocialProfile key={profile.id} profile={profile} />;
       })}
