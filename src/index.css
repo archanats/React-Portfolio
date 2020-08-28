@@ -3,14 +3,15 @@
   --mainWhite: #fff;
   --mainBlue: #0f4c75;
   --mainGrey: #9b9999;
+  --transGrey: rgba(0, 0, 0, 0.1);
 }
-@font-face{
+@font-face {
   font-family: RobotoCondensed;
   src: url(./assets/roboto-condensed.light.ttf);
   font-weight: 800;
 }
 
-@font-face{
+@font-face {
   font-family: EconomicaBold;
   src: url(./assets/economica-bold.ttf);
 }
@@ -23,12 +24,16 @@ body {
   background-color: rgba(2, 1, 1, 0.76); */
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: EconomicaBold;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .dev-name {
@@ -54,24 +59,38 @@ h1 {
 }
 
 @keyframes fade-out {
-  from {opacity: 100;}
-  to {opacity: 0;}
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes fade-in {
-  from {opacity: 0;}
-  to {opacity: 100;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
 }
 
 .jumbotron {
   background-color: var(--mainBlue);
   color: var(--mainWhite);
+  border-radius: 0 !important;
+}
+
+.projects {
+  background: var(--transGrey);
+  margin-top: 3rem;
 }
 
 .btn-yellow {
   background-color: var(--mainYellow);
   text-transform: capitalize;
-  font-size: 1.20rem;
+  font-size: 1.2rem;
   color: var(--mainBlue);
   border-radius: 0 !important;
 }
@@ -93,12 +112,8 @@ h1 {
   border-bottom: 0.1rem solid var(--mainYellow);
 } */
 
-/* .navbar{
+.navbar {
   background: var(--mainBlue);
   color: var(--mainWhite);
- 
-} */
-
-/* .navbar a, .navbar a:hover {
-  color: var(--mainWhite);
-} */
+  /* border-bottom: 0.001rem var(--mainWhite) solid !important; */
+}

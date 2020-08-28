@@ -15,19 +15,18 @@ const SocialProfile = ({ profile }) => (
 );
 
 const SocialProfiles = () => (
-  <>
-    <hr />
+  <div className="social">
     <div className="row">
-      <h3 className="col-10 mx-auto">Connect with me!</h3>
+      <h3 className="col-10 mx-auto mt-3">Connect with me!</h3>
     </div>
     <div className="row">
-      <div className="col-10 mx-auto mt-2">
+      <div className="col-10 mx-auto mb-2">
         {SOCIAL_PROFILES.map((profile) => {
           return <SocialProfile key={profile.id} profile={profile} />;
         })}
       </div>
     </div>
-  </>
+  </div>
 );
 
 export default SocialProfiles;

@@ -1,10 +1,12 @@
 import React from 'react';
 
 import Title from './Title';
+import profilePic from '../assets/archana.jpeg';
 
 const About = ({ displayBio, toggleDisplayBio }) => (
-  <div className="jumbotron">
-    <div className="container-fluid">
+  <div className="my-4 py-4 about">
+    {/* <div className="jumbotron"> */}
+    <img src={profilePic} alt="profile-pic" className="img-fluid profile" />
       <h1>Hello World!</h1>
       <p>
         My name is <span className="dev-name">Archana</span>.
@@ -26,7 +28,7 @@ const About = ({ displayBio, toggleDisplayBio }) => (
           </button>
         </div>
       )}
-    </div>
+    {/* </div> */}
   </div>
 );
 

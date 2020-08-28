@@ -1,10 +1,15 @@
 import React from 'react';
 
 import Projects from './Projects';
+import About from './About';
 
-const Home = () => (
+const Home = (props) => (
   <>
-    <div className="container">
+    <About
+      displayBio={props.displayBio}
+      toggleDisplayBio={props.toggleDisplayBio}
+    />
+    <div className="container-fluid projects">
       <Projects />
     </div>
   </>
