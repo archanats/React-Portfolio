@@ -5,7 +5,9 @@ import PROJECTS from '../data/projects';
 const Project = ({ project }) => (
   <>
     <h3>{project.title}</h3>
-    <a href={project.link} target="_blank"><img src={project.image} alt={project.title} className="project-img" /></a>
+    <a href={project.link} target="_blank">
+      <img src={project.image} alt={project.title} className="project-img" />
+    </a>
     <p className="mb-2">{project.description}</p>
   </>
 );
@@ -17,7 +19,10 @@ const Projects = () => (
     </div>
     <div className="row">
       {PROJECTS.map((project) => (
-        <div key={project.id} className="col-xs-10 col-md-6 col-lg-4 mx-auto p-3 mt-3">
+        <div
+          key={project.id}
+          className="col-10 col-md-6 col-lg-4 mx-auto p-3 mt-3"
+        >
           <Project project={project} />
         </div>
       ))}
