@@ -5,7 +5,7 @@ import PROJECTS from '../data/projects';
 const Project = ({ project }) => (
   <>
     <h3>{project.title}</h3>
-    <img src={project.image} alt={project.title} className="img-fluid" />
+    <a href={project.link} target="_blank"><img src={project.image} alt={project.title} className="project-img" /></a>
     <p className="mb-2">{project.description}</p>
   </>
 );

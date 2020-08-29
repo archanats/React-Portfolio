@@ -1,14 +1,14 @@
-import project1 from '../assets/project1.png';
+import project1 from '../assets/maestro-de-musica.png';
 import project2 from '../assets/project2.png';
 import project3 from '../assets/project3.png';
 
 const PROJECTS = [
   {
     id: 1,
-    title: 'Example React Application 1',
+    title: 'Maestro de Musica',
     description:
-      'Ut eiusmod ipsum reprehenderit nostrud mollit proident ea reprehenderit ullamco consequat eiusmod.',
-    link: '/',
+      'App that lets you search for an artist and shows their top tracks.',
+    link: 'https://maestro-de-musica.netlify.app/',
     image: project1,
   },
   {

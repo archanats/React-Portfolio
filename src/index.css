@@ -99,6 +99,10 @@ h1 {
   background: var(--mainBlue);
 }
 
+.project-img{
+  height: 250px;
+  width: 350px;
+}
 /* .navbar-toggler-icon{
  
   font-size: 2.2rem;
