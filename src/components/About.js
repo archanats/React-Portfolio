@@ -4,7 +4,7 @@ import Title from './Title';
 import profilePic from '../assets/archana.jpeg';
 
 const About = ({ displayBio, toggleDisplayBio }) => (
-  <div className="my-4 py-4 about">
+  <div className="col-12 my-4 py-4 about">
     {/* <div className="jumbotron"> */}
     <img src={profilePic} alt="profile-pic" className="img-fluid profile" />
       <h1>Hello World!</h1>
