@@ -1,28 +1,30 @@
 import React from 'react';
+import { Card } from 'react-bootstrap';
 
 import PROJECTS from '../data/projects';
 
 const Project = ({ project }) => (
-  <>
-    <h3>{project.title}</h3>
-    <a href={project.link} target="_blank">
-      <img src={project.image} alt={project.title} className="project-img" />
-    </a>
-    <p className="mb-2">{project.description}</p>
-  </>
+  <Card className="h-100">
+    <Card.Title className="pt-2">{project.title}</Card.Title>
+    <Card.Img src={project.image} className="project-img"></Card.Img>
+    <Card.Body>
+      {project.description}
+      <a href={project.link} target="_blank">
+        Click here
+      </a>{' '}
+      to try it out.
+    </Card.Body>
+  </Card>
 );
 
 const Projects = () => (
   <>
     <div className="row" id="projects">
-      <h2 className="col-10 mx-auto py-2">Highlighted Projects</h2>
+      <h2 className="col-12 mx-auto py-2">Highlighted Projects</h2>
     </div>
     <div className="row">
       {PROJECTS.map((project) => (
-        <div
-          key={project.id}
-          className="col-10 col-md-6 col-lg-4 mx-auto p-3 mt-3"
-        >
+        <div key={project.id} className="col-12 col-md-6 col-lg-4 mx-auto mt-3">
           <Project project={project} />
         </div>
       ))}

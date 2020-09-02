@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { Navbar, Nav, NavbarToggler, Collapse, NavItem } from 'react-bootstrap';
 
 import About from './About';
+import { NavbarText } from 'reactstrap';
 
 class Header extends Component {
   state = { isNavOpen: false };
@@ -14,6 +15,7 @@ class Header extends Component {
       <>
         <Navbar expand="md" variant="dark">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <NavbarText>&#123; archanats &#125;</NavbarText>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               <Nav.Link href="/home">Home</Nav.Link>
