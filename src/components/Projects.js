@@ -6,13 +6,9 @@ import PROJECTS from '../data/projects';
 const Project = ({ project }) => (
   <Card className="h-100">
     <Card.Title className="pt-2">{project.title}</Card.Title>
-    <Card.Img src={project.image} className="project-img"></Card.Img>
+    <a href={project.link} target="_blank"><Card.Img src={project.image} className="project-img"></Card.Img></a>
     <Card.Body>
       {project.description}
-      <a href={project.link} target="_blank">
-        Click here
-      </a>{' '}
-      to try it out.
     </Card.Body>
   </Card>
 );
