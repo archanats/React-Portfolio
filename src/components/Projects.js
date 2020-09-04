@@ -16,7 +16,7 @@ const Project = ({ project }) => (
 const Projects = () => (
   <>
     <div className="row" id="projects">
-      <h2 className="col-12 mx-auto py-2">Highlighted Projects</h2>
+      <h2 className="col-12 mx-auto py-2">{'< Projects />'}</h2>
     </div>
     <div className="row">
       {PROJECTS.map((project) => (

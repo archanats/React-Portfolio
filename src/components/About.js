@@ -6,8 +6,9 @@ import profilePic from '../assets/archana.jpeg';
 const About = ({ displayBio, toggleDisplayBio }) => (
   <div className="col-12 my-4 py-4 about">
     {/* <div className="jumbotron"> */}
+    <h2 className="pb-3">{'<About />'}</h2>
     <img src={profilePic} alt="profile-pic" className="img-fluid profile" />
-      <h1>Hello World!</h1>
+      <h2 className="pt-3">Hello World!</h2>
       <p>
         My name is <span className="dev-name">Archana</span>.
       </p>
